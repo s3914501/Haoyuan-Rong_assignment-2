@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>Icon Template Square</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="row">
+            <div class="image-container"><img id="img1" src="Image_icon/Icon4.png" height="200" onmouseenter="this.src='Image_icon/Icon4swap.png';" onmouseleave="this.src='Image_icon/Icon4.png';"/></div>
+            <div class="image-container"><img id="img2" src="Image_icon/Icon 1.png" height="200" onmouseenter="this.src='Image_icon/Icon1swap.png';" onmouseleave="this.src='Image_icon/Icon 1.png';"/></div>
+            <div class="image-container"><img id="img3" src="Image_icon/Icon 2.png" height="210" onmouseenter="this.src='Image_icon/Icon2swap.png';" onmouseleave="this.src='Image_icon/Icon 2.png';"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="img4" src="Image_icon/Icon 3.png" height="200" onmouseenter="this.src='Image_icon/Icon3swap.png';" onmouseleave="this.src='Image_icon/Icon 3.png';"/></div>
+            <div class="image-container"><img id="img5" src="Image_icon/Icon5.png" height="187" onmouseenter="this.src='Image_icon/Icon5swap.png';" onmouseleave="this.src='Image_icon/Icon5.png';"/></div>
+            <div class="image-container"><img id="img6" src="Image_icon/Icon6.png" height="190" onmouseenter="this.src='Image_icon/Icon6swap.png';" onmouseleave="this.src='Image_icon/Icon6.png';"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="img7" src="Image_icon/Icon77.png" height="200" width="200" onmouseenter="this.src='Image_icon/Icon7swap.png';" onmouseleave="this.src='Image_icon/Icon77.png';"/></div>
+            <div class="image-container"><img id="img8" src="Image_icon/Icon8.png" height="100" onmouseenter="this.src='Image_icon/Icon88swap.png';" onmouseleave="this.src='Image_icon/Icon8.png';"/></div>
+            <div class="image-container"><img id="img9" src="Image_icon/Icon9.png" height="230" onmouseenter="this.src='Image_icon/Icon9swap.png';" onmouseleave="this.src='Image_icon/Icon9.png';"/></div>
+        </div>
+        
+        <script>
+            var sound1 = new buzz.sound("Sound/Icon4audio.mp3");
+            var sound2 = new buzz.sound("Sound/Icon1audio.mp3");
+            var sound3 = new buzz.sound("Sound/Icon2audio.mp3");
+            var sound4 = new buzz.sound("Sound/Icon3audio.mp3");
+            var sound5 = new buzz.sound("Sound/Icon5audio.mp3");
+            var sound6 = new buzz.sound("Sound/Icon6audio.mp3");
+            var sound7 = new buzz.sound("Sound/Icon7audio.mp3");
+            var sound8 = new buzz.sound("Sound/Icon8audio.mp3");
+            var sound9 = new buzz.sound("Sound/Icon9audio.mp3");
+
+            window.onload = function() {
+                document.getElementById('img1').addEventListener('mouseenter', function () {sound1.play(); });
+                document.getElementById('img2').addEventListener('mouseenter', function () {sound2.play(); });
+                document.getElementById('img3').addEventListener('mouseenter', function () {sound3.play(); });
+                document.getElementById('img4').addEventListener('mouseenter', function () {sound4.play(); });
+                document.getElementById('img5').addEventListener('mouseenter', function () {sound5.play(); });
+                document.getElementById('img6').addEventListener('mouseenter', function () {sound6.play(); });
+                document.getElementById('img7').addEventListener('mouseenter', function () {sound7.play(); });
+                document.getElementById('img8').addEventListener('mouseenter', function () {sound8.play(); });
+                document.getElementById('img9').addEventListener('mouseenter', function () {sound9.play(); });  
+            }
+        </script>
+    </body>
+    
+</html>
